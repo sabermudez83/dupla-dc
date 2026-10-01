@@ -212,12 +212,9 @@ export default function Home() {
         {/* B. HERO SECTION (Tesis de Impacto) */}
         <section className="relative pt-16 pb-20 md:pt-28 md:pb-32 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
           <div className="max-w-4xl mx-auto text-center space-y-8">
-            {/* Tag Superior */}
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/15 backdrop-blur-md shadow-inner">
-              <Sparkles className="w-4 h-4 text-[#D4FF00]" />
-              <span className="text-xs font-mono font-semibold tracking-widest text-[#D4FF00] uppercase">
-                DUPLA CREATIVA
-              </span>
+            {/* Tag / Badge con Estrella */}
+            <div className="inline-flex items-center justify-center p-2.5 rounded-full bg-white/5 border border-white/15 backdrop-blur-md shadow-inner">
+              <Sparkles className="w-5 h-5 text-[#D4FF00]" />
             </div>
 
             {/* Headline Principal */}
