@@ -216,15 +216,15 @@ export default function Home() {
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/15 backdrop-blur-md shadow-inner">
               <Sparkles className="w-4 h-4 text-[#D4FF00]" />
               <span className="text-xs font-mono font-semibold tracking-widest text-[#D4FF00] uppercase">
-                DIRECTORES CREATIVOS FREELANCE
+                DUPLA CREATIVA
               </span>
             </div>
 
             {/* Headline Principal */}
-            <h1 className="text-4xl sm:text-6xl md:text-7xl font-extrabold tracking-tight text-white leading-[1.08] font-sans">
-              10 años pensando juntos.{" "}
+            <h1 className="text-4xl sm:text-6xl md:text-7xl font-extrabold tracking-tight text-white leading-[1.08] font-sans uppercase">
+              Directores Creativos{" "}
               <span className="bg-gradient-to-r from-[#D4FF00] via-lime-300 to-emerald-400 bg-clip-text text-transparent block sm:inline">
-                Cero tiempo de adaptación.
+                Freelance
               </span>
             </h1>
 
