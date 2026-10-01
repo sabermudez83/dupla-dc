@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Syne } from "next/font/google";
+import { Inter, Instrument_Serif, Space_Mono } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({
@@ -8,15 +8,23 @@ const inter = Inter({
   display: "swap",
 });
 
-const syne = Syne({
+const instrumentSerif = Instrument_Serif({
+  weight: "400",
   subsets: ["latin"],
-  variable: "--font-syne",
+  variable: "--font-instrument",
+  display: "swap",
+});
+
+const spaceMono = Space_Mono({
+  weight: ["400", "700"],
+  subsets: ["latin"],
+  variable: "--font-mono",
   display: "swap",
 });
 
 export const metadata: Metadata = {
   title: "Bermúdez & Montefusco — Directores Creativos Freelance",
-  description: "10 años pensando juntos. Cero tiempo de adaptación. Rescate de cuentas, sprints de pitch y fortalecimiento creativo para agencias de publicidad.",
+  description: "Directores Creativos Freelance. Rescate de cuentas, sprints de pitch y fortalecimiento creativo para agencias de publicidad.",
   keywords: [
     "Bermúdez & Montefusco",
     "Santiago Bermúdez",
@@ -29,7 +37,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: "Bermúdez & Montefusco — Directores Creativos Freelance",
-    description: "10 años pensando juntos. Cero tiempo de adaptación. Ideas de alto voltaje para agencias de publicidad.",
+    description: "Ideas de alto voltaje para agencias de publicidad.",
     url: "https://dupla-dc.vercel.app",
     siteName: "Bermúdez & Montefusco",
     locale: "es_AR",
@@ -38,7 +46,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Bermúdez & Montefusco — Directores Creativos Freelance",
-    description: "10 años pensando juntos. Cero tiempo de adaptación.",
+    description: "Directores Creativos Freelance.",
   },
 };
 
@@ -48,8 +56,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="es" className={`${inter.variable} ${syne.variable} scroll-smooth dark`}>
-      <body className="min-h-screen bg-[#0B0B0D] text-gray-100 selection:bg-[#D4FF00] selection:text-black antialiased">
+    <html lang="es" className={`${inter.variable} ${instrumentSerif.variable} ${spaceMono.variable} scroll-smooth`}>
+      <body className="min-h-screen bg-[#F7F6F4] text-[#111111] selection:bg-[#111111] selection:text-[#F7F6F4] antialiased">
         {children}
       </body>
     </html>

@@ -3,36 +3,41 @@
 @layer base {
   html {
     scroll-behavior: smooth;
-    color-scheme: dark;
+    color-scheme: light;
   }
 
   body {
-    background-color: #0B0B0D;
-    color: #F3F4F6;
-    font-family: var(--font-geist-sans), system-ui, -apple-system, sans-serif;
+    background-color: #F7F6F4;
+    color: #111111;
+    font-family: var(--font-inter), system-ui, -apple-system, sans-serif;
     overflow-x: hidden;
   }
 }
 
-/* Custom Utilities for Glow & Glassmorphism */
-.glass-panel {
-  background-color: rgba(24, 24, 28, 0.7);
-  backdrop-filter: blur(16px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+.font-serif-display {
+  font-family: var(--font-instrument), Georgia, serif;
 }
 
-.glass-card {
-  background-color: #18181C;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+.font-mono-meta {
+  font-family: var(--font-mono), monospace;
 }
 
-.glass-card:hover {
-  border-color: rgba(212, 255, 0, 0.3);
-  transform: translateY(-4px);
-  box-shadow: 0 12px 30px -10px rgba(0, 0, 0, 0.7), 0 0 20px -5px rgba(212, 255, 0, 0.1);
+/* Sharp Swiss Editorial Dividers & Hover States */
+.border-grid {
+  border-color: rgba(17, 17, 17, 0.15);
 }
 
-.glow-accent {
-  box-shadow: 0 0 25px -5px rgba(212, 255, 0, 0.4);
+.editorial-row {
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.editorial-row:hover {
+  background-color: #111111;
+  color: #F7F6F4;
+}
+
+/* Smooth Image Reveal Container */
+.hover-preview-image {
+  pointer-events: none;
+  transition: opacity 0.25s cubic-bezier(0.16, 1, 0.3, 1), transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
 }
