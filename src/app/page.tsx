@@ -216,7 +216,7 @@ export default function Home() {
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/15 backdrop-blur-md shadow-inner">
               <Sparkles className="w-4 h-4 text-[#D4FF00]" />
               <span className="text-xs font-mono font-semibold tracking-widest text-[#D4FF00] uppercase">
-                DUPLA DIRECTORA CREATIVA FREELANCE
+                DIRECTORES CREATIVOS FREELANCE
               </span>
             </div>
 
@@ -236,29 +236,6 @@ export default function Home() {
                 Sin egos y jugando en equipo.
               </strong>
             </p>
-
-            {/* Botones de acción (CTAs) */}
-            <div className="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6">
-              {/* Botón Principal */}
-              <a
-                href="#casos"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 text-sm font-bold uppercase tracking-wider text-black bg-[#D4FF00] hover:bg-lime-300 rounded-xl shadow-xl shadow-[#D4FF00]/20 hover:shadow-[#D4FF00]/30 transition-all duration-300 transform hover:-translate-y-0.5 active:translate-y-0"
-              >
-                <span>Ver Trabajos Seleccionados</span>
-                <ChevronRight className="w-4 h-4" />
-              </a>
-
-              {/* Botón Secundario */}
-              <a
-                href="https://wa.me/5491155146718"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 text-sm font-bold uppercase tracking-wider text-white bg-[#18181C] hover:bg-[#222228] border border-white/15 rounded-xl transition-all duration-300 transform hover:-translate-y-0.5 hover:border-white/30"
-              >
-                <MessageCircle className="w-4 h-4 text-[#D4FF00]" />
-                <span>Charlemos por WhatsApp</span>
-              </a>
-            </div>
 
             {/* Barra de credenciales / Social Proof */}
             <div className="pt-14 border-t border-white/10 mt-16">
@@ -534,7 +511,42 @@ export default function Home() {
           </div>
         </section>
 
-        {/* F. CONTACTO & CONVERSIÓN (Footer / CTA Final) */}
+        {/* F. SECCIÓN SKILLS */}
+        <section className="py-20 md:py-28 bg-[#0B0B0D] border-t border-white/10">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center max-w-3xl mx-auto mb-12 space-y-4">
+              <span className="text-xs font-mono uppercase tracking-widest text-[#D4FF00] font-semibold">
+                [ SKILLS ]
+              </span>
+              <h2 className="text-3xl sm:text-5xl font-extrabold text-white tracking-tight">
+                Skills & Especialidades
+              </h2>
+            </div>
+
+            <div className="flex flex-wrap justify-center gap-3 sm:gap-4 max-w-4xl mx-auto">
+              {[
+                "IA",
+                "Música",
+                "Redacción",
+                "Dirección de arte",
+                "Filmmaking",
+                "Contenido redes",
+                "Edición de video",
+                "Presentaciones",
+                "Inglés",
+              ].map((skill, idx) => (
+                <div
+                  key={idx}
+                  className="px-6 py-3.5 rounded-xl bg-[#18181C] border border-white/10 text-neutral-200 text-sm sm:text-base font-medium hover:border-[#D4FF00]/50 hover:text-[#D4FF00] transition-all duration-300 shadow-md hover:scale-105"
+                >
+                  {skill}
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* G. CONTACTO & CONVERSIÓN (Footer / CTA Final) */}
         <section className="relative py-24 md:py-36 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto overflow-hidden">
           {/* Background Glow */}
           <div className="pointer-events-none absolute bottom-0 left-1/2 -translate-x-1/2 w-full max-w-4xl h-80 bg-gradient-to-t from-[#D4FF00]/15 via-transparent to-transparent blur-3xl opacity-60" />
@@ -556,7 +568,7 @@ export default function Home() {
 
             {/* Canales de contacto directo */}
             <div className="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6">
-              {/* WhatsApp Directo */}
+              {/* WhatsApp */}
               <a
                 href="https://wa.me/5491155146718"
                 target="_blank"
@@ -564,7 +576,7 @@ export default function Home() {
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 text-sm font-bold uppercase tracking-wider text-black bg-[#D4FF00] hover:bg-lime-300 rounded-xl shadow-xl shadow-[#D4FF00]/25 hover:shadow-[#D4FF00]/40 transition-all duration-300 transform hover:-translate-y-0.5"
               >
                 <MessageCircle className="w-5 h-5 fill-black" />
-                <span>WhatsApp Directo</span>
+                <span>WhatsApp</span>
               </a>
 
               {/* Email Directo */}
@@ -573,7 +585,7 @@ export default function Home() {
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 text-sm font-bold uppercase tracking-wider text-white bg-white/10 hover:bg-white/20 border border-white/20 rounded-xl transition-all duration-300 transform hover:-translate-y-0.5"
               >
                 <Mail className="w-5 h-5 text-[#D4FF00]" />
-                <span>sabermudez@gmail.com</span>
+                <span>MAIL</span>
               </a>
             </div>
           </div>
@@ -587,12 +599,12 @@ export default function Home() {
             <span className="font-bold text-white">Bermúdez & Montefusco</span>
             <span className="text-neutral-500">•</span>
             <span className="text-xs font-mono text-neutral-400 uppercase">
-              Dupla Directora Creativa Freelance
+              Directores Creativos Freelance
             </span>
           </div>
 
           <p className="text-xs font-mono text-neutral-500">
-            © 2026 Bermúdez & Montefusco. Dupla Directora Creativa Freelance. Buenos Aires, Argentina.
+            © 2026 Bermúdez & Montefusco. Directores Creativos Freelance. Buenos Aires, Argentina.
           </p>
         </div>
       </footer>

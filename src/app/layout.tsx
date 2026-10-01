@@ -15,7 +15,7 @@ const syne = Syne({
 });
 
 export const metadata: Metadata = {
-  title: "Bermúdez & Montefusco — Dupla Directora Creativa Freelance",
+  title: "Bermúdez & Montefusco — Directores Creativos Freelance",
   description: "10 años pensando juntos. Cero tiempo de adaptación. Rescate de cuentas, sprints de pitch y fortalecimiento creativo para agencias de publicidad.",
   keywords: [
     "Bermúdez & Montefusco",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     "Pitch Creative Squad",
   ],
   openGraph: {
-    title: "Bermúdez & Montefusco — Dupla Directora Creativa Freelance",
+    title: "Bermúdez & Montefusco — Directores Creativos Freelance",
     description: "10 años pensando juntos. Cero tiempo de adaptación. Ideas de alto voltaje para agencias de publicidad.",
     url: "https://dupla-dc.vercel.app",
     siteName: "Bermúdez & Montefusco",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Bermúdez & Montefusco — Dupla Directora Creativa Freelance",
+    title: "Bermúdez & Montefusco — Directores Creativos Freelance",
     description: "10 años pensando juntos. Cero tiempo de adaptación.",
   },
 };
